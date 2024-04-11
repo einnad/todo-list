@@ -1,0 +1,27 @@
+.notes-container {
+  max-width: 50%;
+}
+
+.notes {
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+}
+
+.notes-input {
+  display: flex;
+  flex-direction: column;
+  background-color: cadetblue;
+}
+
+.notes ul {
+  list-style: none;
+}
+
+.n-remove-button {
+  cursor: pointer;
+  background-color: transparent;
+  color: #cccccc;
+  border: 2px solid #cccccc;
+  border-radius: 5px;
+}

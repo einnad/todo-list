@@ -6,3 +6,18 @@ body {
   background-color: #121212;
   color: #cccccc;
 }
+
+.section-one {
+  display: flex;
+  justify-content: space-between;
+}
+
+textarea,
+input,
+button {
+  background-color: #cccccc;
+}
+
+h2 {
+  text-transform: uppercase;
+}

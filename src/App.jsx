@@ -1,12 +1,16 @@
 import "./App.css";
 import ToDoList from "./ToDoList/ToDoList";
 import Clock from "./Clock/Clock";
+import Notes from "./Notes/Notes";
 
 function App() {
   return (
     <>
       <Clock />
-      <ToDoList />
+      <div className="section-one">
+        <ToDoList />
+        <Notes />
+      </div>
     </>
   );
 }

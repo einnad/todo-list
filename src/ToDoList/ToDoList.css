@@ -1,12 +1,17 @@
 .todo-list-container {
-  width: 50%;
+  max-width: 50%;
 }
 
 .todo-list {
-  padding: 20px;
+  padding-left: 20px;
 }
 
 .todo-list ul {
   list-style: none;
   padding: 0;
+}
+
+.add-button,
+.remove-button {
+  cursor: pointer;
 }

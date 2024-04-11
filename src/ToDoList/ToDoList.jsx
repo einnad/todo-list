@@ -11,7 +11,7 @@ function ToDoList() {
   const [newTask, setNewTask] = useState("");
 
   function handleInput(e) {
-    setNewTask(event.target.value);
+    setNewTask(e.target.value);
   }
 
   function addTask() {
@@ -21,7 +21,7 @@ function ToDoList() {
     }
   }
 
-  function deleteTask(index) {
+  function removeTask(index) {
     const updatedTasks = tasks.filter((_, i) => i !== index);
     setTasks(updatedTasks);
   }
@@ -29,7 +29,7 @@ function ToDoList() {
   return (
     <div className="todo-list-container">
       <div className="todo-list">
-        <h1>To-Do List</h1>
+        <h2>To-Do List</h2>
 
         <div>
           <input
@@ -47,7 +47,7 @@ function ToDoList() {
           {tasks.map((t, i) => (
             <li key={i}>
               <p>{t}</p>
-              <button className="remove-button" onClick={() => deleteTask(i)}>
+              <button className="remove-button" onClick={() => removeTask(i)}>
                 Remove
               </button>
             </li>
