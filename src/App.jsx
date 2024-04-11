@@ -5,8 +5,8 @@ import Clock from "./Clock/Clock";
 function App() {
   return (
     <>
-      <ToDoList />
       <Clock />
+      <ToDoList />
     </>
   );
 }

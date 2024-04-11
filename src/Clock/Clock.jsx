@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Clock.css";
 
 function Clock() {
   let now = new Date().toLocaleTimeString();
@@ -18,8 +19,8 @@ function Clock() {
   setInterval(updateClock);
 
   return (
-    <div>
-      <div>{time}</div>
+    <div className="clock-container">
+      <div className="clock">{time}</div>
     </div>
   );
 }

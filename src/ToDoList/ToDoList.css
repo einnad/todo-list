@@ -1,0 +1,12 @@
+.todo-list-container {
+  width: 50%;
+}
+
+.todo-list {
+  padding: 20px;
+}
+
+.todo-list ul {
+  list-style: none;
+  padding: 0;
+}

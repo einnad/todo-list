@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./ToDoList.css";
 
 function ToDoList() {
   const [tasks, setTasks] = useState([
@@ -26,31 +27,33 @@ function ToDoList() {
   }
 
   return (
-    <div className="to-do-list">
-      <h1>To-Do List</h1>
+    <div className="todo-list-container">
+      <div className="todo-list">
+        <h1>To-Do List</h1>
 
-      <div>
-        <input
-          type="text"
-          onChange={handleInput}
-          placeholder="Enter a task"
-          value={newTask}
-        />
-        <button className="add-button" onClick={addTask}>
-          Add Task
-        </button>
+        <div>
+          <input
+            type="text"
+            onChange={handleInput}
+            placeholder="Enter a task"
+            value={newTask}
+          />
+          <button className="add-button" onClick={addTask}>
+            Add Task
+          </button>
+        </div>
+
+        <ul>
+          {tasks.map((t, i) => (
+            <li key={i}>
+              <p>{t}</p>
+              <button className="remove-button" onClick={() => deleteTask(i)}>
+                Remove
+              </button>
+            </li>
+          ))}
+        </ul>
       </div>
-
-      <ul>
-        {tasks.map((t, i) => (
-          <li key={i}>
-            <p>{t}</p>
-            <button className="remove-button" onClick={() => deleteTask(i)}>
-              Remove
-            </button>
-          </li>
-        ))}
-      </ul>
     </div>
   );
 }
