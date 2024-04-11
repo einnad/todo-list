@@ -1,6 +1,6 @@
 import "./App.css";
-import ToDoList from "./ToDoList";
-import Clock from "./Clock";
+import ToDoList from "./ToDoList/ToDoList";
+import Clock from "./Clock/Clock";
 
 function App() {
   return (
