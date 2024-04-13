@@ -39,7 +39,7 @@ function Weather() {
   }
 
   return (
-    <div>
+    <div className="weather-container">
       <div className="weather">
         <form onSubmit={handleWeather}>
           <input
@@ -56,15 +56,14 @@ function Weather() {
             <h2>
               {weather.name}, {weather.sys.country}
             </h2>
-            <p>Temperature: {weather.main.temp}°C</p>
-            <p>Description: {weather.weather[0].description}</p>
+            <p>{weather.main.temp}°C</p>
+            <p>{weather.weather[0].description}</p>
             <p>Feels like : {weather.main.feels_like}°C</p>
             <p>Humidity : {weather.main.humidity}%</p>
-            <p>Pressure : {weather.main.pressure}</p>
             <p>Wind Speed : {weather.wind.speed}m/s</p>
           </>
         ) : (
-          <p>Loading weather data...</p>
+          <></>
         )}
       </div>
     </div>
