@@ -15,8 +15,8 @@ function Links() {
   }
 
   return (
-    <div>
-      <div>
+    <div className="links-container">
+      <div className="links">
         <h2>Quick Links</h2>
         <input
           type="text"
@@ -29,7 +29,9 @@ function Links() {
         <ul>
           {links.map((l, i) => (
             <li key={i}>
-              <p>{l}</p>
+              <a href={`${l}`} className="quick-link">
+                {l}
+              </a>
             </li>
           ))}
         </ul>

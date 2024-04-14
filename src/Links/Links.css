@@ -1,0 +1,12 @@
+.links-container {
+  display: flex;
+  justify-content: center;
+}
+
+.links {
+  padding: 20px;
+}
+
+.quick-link {
+  color: #cccccc;
+}
