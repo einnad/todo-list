@@ -35,6 +35,7 @@ function Weather() {
 
   function handleWeather(e) {
     e.preventDefault();
+    setArea("");
     getData();
   }
 

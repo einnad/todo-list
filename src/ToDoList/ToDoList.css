@@ -1,5 +1,6 @@
 .todo-list-container {
   max-width: 50%;
+  justify-self: center;
 }
 
 .todo-list {

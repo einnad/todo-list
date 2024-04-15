@@ -1,5 +1,6 @@
 .notes-container {
   max-width: 50%;
+  justify-self: center;
 }
 
 .notes {
@@ -11,7 +12,7 @@
 .notes-input {
   display: flex;
   flex-direction: column;
-  background-color: cadetblue;
+  gap: 5px;
 }
 
 .notes ul {

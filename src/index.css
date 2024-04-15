@@ -7,15 +7,23 @@ body {
   color: #cccccc;
 }
 
+.wrapper {
+  margin: 20px 100px;
+}
+
 .section-one {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 textarea,
 input,
 button {
-  background-color: #cccccc;
+  border: 2px solid #cccccc;
+  background: transparent;
+  color: #cccccc;
+  border-radius: 10px;
+  padding: 5px;
 }
 
 h2 {

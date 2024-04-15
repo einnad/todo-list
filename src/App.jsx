@@ -7,15 +7,17 @@ import Links from "./Links/Links";
 
 function App() {
   return (
-    <>
+    <div>
       <Clock />
-      <div className="section-one">
-        <ToDoList />
-        <Notes />
+      <div className="wrapper">
+        <div className="section-one">
+          <ToDoList />
+          <Notes />
+          <Weather />
+          <Links />
+        </div>
       </div>
-      <Weather />
-      <Links />
-    </>
+    </div>
   );
 }
 
