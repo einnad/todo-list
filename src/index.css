@@ -3,8 +3,11 @@
 }
 
 body {
-  background-color: #121212;
+  background-color: #212121;
   color: #cccccc;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 .wrapper {
@@ -24,8 +27,30 @@ button {
   color: #cccccc;
   border-radius: 10px;
   padding: 5px;
+  margin: 5px;
+}
+
+button {
+  box-shadow: 0 2px 10px #cccccc;
+}
+
+button:hover {
+  background-color: #cccccc;
+  color: #212121;
+  transition: 0.7s;
 }
 
 h2 {
   text-transform: uppercase;
+}
+
+@media (max-width: 1500px) {
+  .section-one {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .wrapper {
+    margin: 0;
+  }
 }

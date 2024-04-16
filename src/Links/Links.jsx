@@ -14,6 +14,10 @@ function Links() {
     setNewLink("");
   }
 
+  function removeLink(index) {
+    const updatedLinks = links.filter((_, i) => i !== index);
+    setLinks(updatedLinks);
+  }
   return (
     <div className="links-container">
       <div className="links">
@@ -32,6 +36,7 @@ function Links() {
               <a href={`${l}`} className="quick-link">
                 {l}
               </a>
+              <button onClick={() => removeLink(i)}> X </button>
             </li>
           ))}
         </ul>
